@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DetalleComponent } from './detalle/detalle.component';
+import { EditarComponent } from './editar/editar.component';
+import { NuevoComponent } from './nuevo/nuevo.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { DetalleComponent } from './detalle/detalle.component';
     PersonajesComponent,
     HomeComponent,
     AboutComponent,
-    DetalleComponent
+    DetalleComponent,
+    EditarComponent,
+    NuevoComponent
   ],
   imports: [
     BrowserModule,

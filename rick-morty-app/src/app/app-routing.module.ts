@@ -4,12 +4,16 @@ import { HomeComponent } from '../app/home/home.component';
 import { AboutComponent } from '../app/about/about.component';
 import { PersonajesComponent } from '../app/personajes/personajes.component';
 import { DetalleComponent } from './detalle/detalle.component';
+import { EditarComponent } from './editar/editar.component';
+import { NuevoComponent } from './nuevo/nuevo.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },       // Ruta raíz, página home
   { path: 'about', component: AboutComponent }, // Ruta para la página About
   { path: 'personajes', component: PersonajesComponent }, // Ruta para la página de Personajes
   { path: 'detalles/:id', component: DetalleComponent },
+  { path: 'editar/:id', component: EditarComponent }, //editar personaje
+  { path: 'nuevo', component: NuevoComponent }//añadir personaje
 
 ];
 
