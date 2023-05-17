@@ -1,0 +1,22 @@
+<div class="text-center">
+    <div>
+        <img [src]="character?.image" class="rounded mx-auto d-block" alt="imagen character" />
+    </div>
+    <ul class="list-group list-group-flush d-inline-block">
+        <li class="list-group-item border-0">
+            Name: {{ character?.name | json }}
+        </li>
+        <li class="list-group-item border-0">
+            Status: {{ character?.status | json }}
+        </li>
+        <li class="list-group-item border-0">
+            Type: {{ character?.type | json }}
+        </li>
+        <li class="list-group-item border-0">
+            Gender: {{ character?.gender | json }}
+        </li>
+        <li class="list-group-item border-0">
+            Origin: {{ character?.origin.name | json }}
+        </li>
+    </ul>
+</div>
