@@ -37,6 +37,7 @@ export class NuevoComponent {
       species: this.species,
       gender: this.gender,
       origin: this.origin,
+
     };
 
     // Llama al método `create` del servicio para guardar el personaje

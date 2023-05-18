@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { PersonajesService } from '../personajes.service';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-personajes',
   templateUrl: './personajes.component.html',
@@ -14,13 +13,13 @@ export class PersonajesComponent implements OnInit {
   constructor(private personajesService: PersonajesService, private router: Router) {}
 
   ngOnInit() {
+    this.fetchCharacters();
+  }
+
+  fetchCharacters() {
     this.personajesService.fetchCharacters().subscribe(
       result => {
-        if (result.results && Array.isArray(result.results)) {
-          this.characters = result.results;
-        } else {
-          console.error('API response is not as expected:', result);
-        }
+        this.characters = result;
       },
       error => {
         console.error('Error fetching characters:', error);
@@ -29,8 +28,6 @@ export class PersonajesComponent implements OnInit {
   }
 
   seeMore(character: any) {
-   
-    // Alternatively, you can navigate to the details page using the Angular router:
     this.router.navigate(['/detalles', character.id]);
   }
 }

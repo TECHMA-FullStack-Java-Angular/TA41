@@ -6,12 +6,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PersonajesService {
 
-    // Inyección de HttpClient en el constructor
-    constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
-    fetchCharacters() {
-      console.log (this.http.get<any>('https://rickandmortyapi.com/api/character'));
-      return this.http.get<any>('https://rickandmortyapi.com/api/character');
-    }
-    
-  } 
+  fetchCharacters() {
+    return this.http.get<any>('http://localhost:3000/characters');
+  }
+}

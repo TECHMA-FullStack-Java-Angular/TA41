@@ -60,6 +60,14 @@
       "gender": "agradg",
       "origin": "ag",
       "id": 7
+    },
+    {
+      "name": "Prueba",
+      "status": "szdf",
+      "species": "asf",
+      "gender": "asd",
+      "origin": "ads",
+      "id": 8
     }
   ]
 }
