@@ -68,6 +68,22 @@
       "gender": "asd",
       "origin": "ads",
       "id": 8
+    },
+    {
+      "name": "Testing",
+      "status": "Dead",
+      "species": "Human",
+      "gender": "female",
+      "origin": "earth",
+      "id": 9
+    },
+    {
+      "name": "sdfgad",
+      "status": "adfg",
+      "species": "afg",
+      "gender": "adfg",
+      "origin": "adfg",
+      "id": 10
     }
   ]
 }
